@@ -34,6 +34,5 @@ class Report(models.Model):
     fuel = models.ForeignKey(Fuel, on_delete=models.CASCADE)
     is_available = models.BooleanField()
     price = models.IntegerField(null=True, blank=True)
-
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
